@@ -1,4 +1,4 @@
-name: Update gist
+name: gist.github.com/CozyKim/39e7ccd5e45e79953ac5b0a658b74879
 on:
   repository_dispatch:
     types: [build-event]
@@ -9,9 +9,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Update gist
+      - name: gist.github.com/CozyKim/39e7ccd5e45e79953ac5b0a658b74879
         uses: maxam2017/productive-box@master
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           GIST_ID: 9842e074b8ee46aef76fd0d493bae0ed
-          TIMEZONE: Asia/Taipei
+          TIMEZONE: Asia/Seoul
